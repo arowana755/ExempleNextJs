@@ -25,11 +25,11 @@ const Home: React.FC = () => {
             <form method="post" action="#" onSubmit={handleFormSubmit}>
                 <div>
                     <label htmlFor="preference">Quelles sont vos préférences ?</label>
-                    <input type="text" id="preference" value={title} onChange={(e) => setTitle(e.target.value)} className={inputBgClass} />
+                    <input type="text" id="preference" value="preference"/>
                 </div>
                 <div>
                     <label htmlFor="temps">Combien de temps voulez-vous y consacrer ?</label>
-                    <input type="text" id="temps" value={description} onChange={(e) => setDescription(e.target.value)} className={inputBgClass} />
+                    <input type="text" id="temps" value="temps"/>
                 </div>
             </form>
         </main>
