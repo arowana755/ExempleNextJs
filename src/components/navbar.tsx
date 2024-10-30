@@ -1,10 +1,8 @@
 import React from "react";
-import Navbar from "@/components/navbar";
 
 const Navbar: React.FC<{ toggleDarkMode: () => void; darkMode: boolean }> = ({ toggleDarkMode, darkMode }) => {
     return (
         <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-4 border-b border-slate-600 text-white backdrop-blur-sm">
-            <Navbar toggleDarkMode={() => setDarkMode(!darkMode)} darkMode={darkMode} />
             <div className="flex items-center">
                 <button className="relative group">
                     <span className="border-b border-transparent transition duration-300 ease-in-out group-hover:border-red-500 group-hover:w-full w-0 block"></span>
