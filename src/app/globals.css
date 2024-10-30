@@ -72,16 +72,22 @@ body {
   }
 }
 
-span {
-  background-color: gray;
-}
-
 main {
   margin-top: 10%;
   height: 90%;
+  color: gray;
 }
 
 form {
   margin-top: 10%;
   height: 300mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+
+button {
+  height: 2em;
+  width: 5em;
+}
+
