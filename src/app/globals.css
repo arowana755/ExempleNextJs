@@ -73,13 +73,13 @@ body {
 }
 
 main {
-  margin-top: 10%;
+  padding-top: 10%;
   height: 90%;
   color: gray;
 }
 
 form {
-  padding-top: 10%;
+  margin-top: 10%;
   height: 15em;
   display: flex;
   flex-direction: column;
