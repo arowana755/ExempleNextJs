@@ -80,7 +80,7 @@ main {
 
 form {
   margin-top: 10%;
-  height: 300mm;
+  height: 20em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
