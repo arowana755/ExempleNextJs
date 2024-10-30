@@ -75,3 +75,8 @@ body {
 span {
   background-color: gray;
 }
+
+main {
+  margin-top: 10%;
+  height: 90%;
+}
