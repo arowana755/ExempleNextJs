@@ -79,8 +79,8 @@ main {
 }
 
 form {
-  margin-top: 10%;
-  height: 20em;
+  padding-top: 10%;
+  height: 15em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

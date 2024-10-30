@@ -31,6 +31,8 @@ const Home: React.FC = () => {
                     <label htmlFor="temps">Combien de temps voulez-vous y consacrer ?</label>
                     <input type="text" id="temps" value="temps"/>
                 </div>
+
+                <input type="submit" value="Envoyer"/>
             </form>
         </main>
     );
