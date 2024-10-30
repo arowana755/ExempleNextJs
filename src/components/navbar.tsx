@@ -4,7 +4,9 @@ const Navbar: React.FC<{ toggleDarkMode: () => void; darkMode: boolean }> = ({ t
     return (
         <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-4 border-b border-slate-600 text-white backdrop-blur-sm">
             <div className="flex items-center">
-                <button>Bouton</button>
+                <button className="relative group">
+                    <span className="border-b border-transparent transition duration-300 ease-in-out group-hover:border-red-500 group-hover:w-full w-0 block"></span>
+                </button>
             </div>
             <div className="flex space-x-4">
                 <button className="relative group">

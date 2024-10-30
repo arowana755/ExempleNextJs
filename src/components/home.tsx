@@ -22,16 +22,15 @@ const Home: React.FC = () => {
     return (
         <main className={`min-h-screen w-screen ${bgClass} text-gray-900 dark:text-gray-100`}>
             <Navbar toggleDarkMode={() => setDarkMode(!darkMode)} darkMode={darkMode} />
-            <form method="post" action="#">
+            <form method="post" action="#" onSubmit={handleFormSubmit}>
                 <div>
                     <label htmlFor="preference">Quelles sont vos préférences ?</label>
-                    <input type="text" id="preference" value="preference">
+                    <input type="text" id="preference" value={title} onChange={(e) => setTitle(e.target.value)} className={inputBgClass} />
                 </div>
                 <div>
                     <label htmlFor="temps">Combien de temps voulez-vous y consacrer ?</label>
-                    <input type="text" id="temps" value="temps">
+                    <input type="text" id="temps" value={description} onChange={(e) => setDescription(e.target.value)} className={inputBgClass} />
                 </div>
-                <input type="submit" value="envoyer">Envoyer</input>
             </form>
         </main>
     );
