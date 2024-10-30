@@ -75,7 +75,6 @@ body {
 main {
   padding-top: 10%;
   height: 90%;
-  color: gray;
 }
 
 form {
@@ -91,3 +90,8 @@ button {
   width: 5em;
 }
 
+form div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
