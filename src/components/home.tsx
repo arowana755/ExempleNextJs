@@ -22,39 +22,19 @@ const Home: React.FC = () => {
     return (
         <div className={`min-h-screen w-screen ${bgClass} text-gray-900 dark:text-gray-100`}>
             <Navbar toggleDarkMode={() => setDarkMode(!darkMode)} darkMode={darkMode} />
-            <div className="pt-20 p-4 max-w-2xl mx-auto">
-                <h1 className={`text-3xl font-bold mb-6 text-center ${titleClass}`}><u> Submit a Project </u></h1>                {!project ? (
-                <Card className={`p-6 rounded-lg border ${cardClass}`}>
-                        <CardBody className="flex flex-col items-center">
-                            <form onSubmit={handleFormSubmit} className="space-y-4">
-                                <Input
-                                    label=""
-                                    placeholder="Enter project title"
-                                    value={title}
-                                    onChange={(e) => setTitle(e.target.value)}
-                                    className={inputBgClass}
-                                />
-                                <Divider />
-                                <Textarea
-                                    label="Description"
-                                    placeholder="Enter your description"
-                                    value={description}
-                                    onChange={(e) => setDescription(e.target.value)}
-                                    className={textareaBgClass}
-                                />
-                                <Button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white">
-                                    Submit
-                                </Button>
-                            </form>
-                        </CardBody>
-                    </Card>
-                ) : (
-                    <div className="space-y-4">
-                        <h2 className="text-2xl font-bold">{project.title}</h2>
-                        <p>{project.description}</p>
-                    </div>
-                )}
-            </div>
+            <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+                <form method="post" action="#">
+                <div>
+                    <label htmlFor="preference">Quelles sont vos préférences ?</label>
+                    <input type="text" id="preference" value="preference">
+                </div>
+                <div>
+                    <label htmlFor="temps">Combien de temps voulez-vous y consacrer ?</label>
+                    <input type="text" id="temps" value="temps">
+                </div>
+                <input type="submit" value="envoyer">Envoyer</input>
+                </form>
+            </main>
         </div>
     );
 };

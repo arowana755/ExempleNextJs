@@ -71,3 +71,7 @@ body {
     text-wrap: balance;
   }
 }
+
+span {
+  background-color: gray;
+}
