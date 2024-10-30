@@ -20,10 +20,9 @@ const Home: React.FC = () => {
     const titleClass = darkMode ? "text-gray-100" : "text-zinc-500";
 
     return (
-        <div className={`min-h-screen w-screen ${bgClass} text-gray-900 dark:text-gray-100`}>
+        <main className={`min-h-screen w-screen ${bgClass} text-gray-900 dark:text-gray-100`}>
             <Navbar toggleDarkMode={() => setDarkMode(!darkMode)} darkMode={darkMode} />
-            <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-                <form method="post" action="#">
+            <form method="post" action="#">
                 <div>
                     <label htmlFor="preference">Quelles sont vos préférences ?</label>
                     <input type="text" id="preference" value="preference">
@@ -33,9 +32,8 @@ const Home: React.FC = () => {
                     <input type="text" id="temps" value="temps">
                 </div>
                 <input type="submit" value="envoyer">Envoyer</input>
-                </form>
-            </main>
-        </div>
+            </form>
+        </main>
     );
 };
 
